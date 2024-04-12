@@ -10,16 +10,32 @@
       <h1>Weather</h1>
       <label for="cityInput">City:</label>
       <input
+        class="cityInput"
         type="text"
         id="cityInput"
         name="cityInput"
         placeholder="City name"
       />
+      <button class="searchButton">Search</button>
       <div class="weatherDiv">
-        <div class="cityName"></div>
-        <div class="weatherLogo"></div>
-        <div class="extraInfo"></div>
-        <div class="wind"></div>
+        <div class="nameDiv">
+          <div class="countryName"></div>
+          <div class="cityName"></div>
+        </div>
+        <div class="tempDiv">
+          <div class="tempHeader header"></div>
+          <div class="tempValue value"></div>
+        </div>
+        <div class="extraInfoDiv">
+          <div class="feelsLikeDiv">
+            <div class="feelsLikeHeader header"></div>
+            <div class="feelsLikeValue value"></div>
+          </div>
+          <div class="windDiv">
+            <div class="windHeader header"></div>
+            <div class="windValue value"></div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>

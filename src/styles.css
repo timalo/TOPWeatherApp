@@ -6,13 +6,17 @@ body {
   background-color: #290031;
 }
 
+h1 {
+  margin-bottom: 5px; /* lol */
+}
+
 .content {
   background-color: darkgray;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
-  height: 40%;
+  width: 40%;
+  height: 60%;
   border: 2px solid black;
   border-radius: 2px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -21,9 +25,49 @@ body {
 
 .weatherDiv {
   display: grid;
-  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-rows: 1fr 2fr 2fr;
   height: 100%;
   width: 80%;
   border: 1px solid red;
   margin-top: 10px;
+}
+
+.weatherDiv > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.extraInfoDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.extraInfoDiv > * {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.countryName {
+  font-size: 1.25em;
+}
+
+.cityName {
+  font-size: 1.5em;
+}
+
+.value {
+  font-size: 2em;
+  font-weight: 900;
+  font-style: bold;
 }
