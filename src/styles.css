@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #290031;
+}
+
+.content {
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  height: 40%;
+  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+
+.weatherDiv {
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  height: 100%;
+  width: 80%;
+  border: 1px solid red;
+  margin-top: 10px;
+}
